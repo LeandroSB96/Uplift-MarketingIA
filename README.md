@@ -1,1 +1,1 @@
-# AuraAI---MarketingIA
+# AuraAI-MarketingIA
