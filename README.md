@@ -1,1 +1,1 @@
-# AuraAI-MarketingIA
+# Uplift-MarketingIA
