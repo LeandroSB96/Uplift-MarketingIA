@@ -22,7 +22,7 @@ export function Proof() {
           ))}
         </div>
         <figure className="proof-quote">
-          <blockquote>“AuraAI helped our team spend less time reconciling reports and more time acting on what we learned.”</blockquote>
+          <blockquote>“Uplift helped our team spend less time reconciling reports and more time acting on what we learned.”</blockquote>
           <figcaption>Jordan Lee <span>VP of Growth, Northstar Labs (sample)</span></figcaption>
         </figure>
       </div>

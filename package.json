@@ -1,10 +1,10 @@
 {
-  "name": "auraai-marketing-template",
+  "name": "uplift-marketing-template",
   "version": "0.1.0",
   "private": true,
   "packageManager": "npm@10.9.8",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start"
   },

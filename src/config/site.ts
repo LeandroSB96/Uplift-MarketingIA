@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: 'AuraAI',
-  email: 'hello@auraai.com',
+  name: 'Uplift',
+  email: 'hello@uplift.com',
   navigation: [
     { label: 'Platform', href: '#platform' },
     { label: 'Plans', href: '#pricing' },

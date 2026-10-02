@@ -1,6 +1,6 @@
-# AuraAI Marketing Template | Customization Guide
+# Uplift | Customization Guide
 
-This template is a starting point, not a claim that AuraAI has real customers, integrations, performance results, or a production AI platform. Replace sample content with facts you can substantiate before publishing or reselling a customized version.
+This template is a starting point, not a claim that Uplift has real customers, integrations, performance results, or a production AI platform. Replace sample content with facts you can substantiate before publishing or reselling a customized version.
 
 ## English
 
@@ -24,7 +24,7 @@ npm start
 
 Edit `src/config/site.ts` first:
 
-- `name`: the product or agency name shown in the navigation and footer. Update the page title separately in `app/layout.tsx`.
+- `name`: the product or agency name shown in the navigation and footer. Update the page title separately in `src/app/layout.tsx`.
 - `email`: the address used by the engagement, contact, and plan inquiry email links.
 - `navigation`: visible section links and their anchor IDs.
 
@@ -32,7 +32,7 @@ Keep the section IDs in sync if you rename navigation anchors. The hero and navi
 
 ### 3. Edit page copy and sections
 
-The homepage is assembled in `app/page.tsx`. Most sections are React Server Components and do not ship client-side JavaScript:
+The homepage is assembled in `src/app/page.tsx`. Most sections are React Server Components and do not ship client-side JavaScript:
 
 - `src/components/FeatureBento.tsx`: feature cards and their small CSS visuals.
 - `src/components/Approach.tsx`: the three-step operating model.
@@ -63,13 +63,13 @@ Edit `src/styles/global.css`:
 - Responsive layouts are grouped in the `900px` and `640px` media queries.
 - Reduced-motion handling is kept in the `prefers-reduced-motion` query.
 
-The active router is the root `app/` directory. Do not add a `src/pages/` directory alongside it; Next.js rejects App Router and Pages Router directories at different levels.
+The active router is in `src/app/`. Do not add a `src/pages/` directory alongside it; Next.js rejects App Router and Pages Router directories at different levels.
 
-The display and body fonts are loaded from Google Fonts in `app/layout.tsx`. For a fully self-hosted deployment, replace that link with licensed local font files and preload only the weights you actually use.
+The display and body fonts are loaded from Google Fonts in `src/app/layout.tsx`. For a fully self-hosted deployment, replace that link with licensed local font files and preload only the weights you actually use.
 
 ### 6. Update SEO and social sharing
 
-`app/layout.tsx` provides the document language, title, description, theme color, and basic Open Graph metadata. Change the defaults there, add a canonical URL and a real social-preview image for your domain, and keep the description aligned with the page's actual offer. Add a favicon under `public/` and reference it from the metadata.
+`src/app/layout.tsx` provides the document language, title, description, theme color, and basic Open Graph metadata. Change the defaults there, add a canonical URL and a real social-preview image for your domain, and keep the description aligned with the page's actual offer. Add a favicon under `public/` and reference it from the metadata.
 
 ### 7. Before publishing
 
@@ -101,7 +101,7 @@ npm start
 
 Empieza por `src/config/site.ts`:
 
-- `name`: nombre del producto o agencia que aparece en la navegación y el pie. Cambia el título por separado en `app/layout.tsx`.
+- `name`: nombre del producto o agencia que aparece en la navegación y el pie. Cambia el título por separado en `src/app/layout.tsx`.
 - `email`: dirección utilizada en los enlaces de consulta de servicios, contacto y planes.
 - `navigation`: enlaces visibles de las secciones y sus IDs de anclaje.
 
@@ -109,7 +109,7 @@ Mantén sincronizados los IDs si cambias los enlaces de navegación. Los CTA del
 
 ### 3. Editar textos y secciones
 
-La página principal se ensambla en `app/page.tsx`. La mayoría de las secciones son React Server Components y no envían JavaScript al cliente:
+La página principal se ensambla en `src/app/page.tsx`. La mayoría de las secciones son React Server Components y no envían JavaScript al cliente:
 
 - `src/components/FeatureBento.tsx`: tarjetas de características y sus gráficos CSS.
 - `src/components/Approach.tsx`: modelo de trabajo en tres etapas.
@@ -140,13 +140,13 @@ Edita `src/styles/global.css`:
 - Las reglas adaptables están agrupadas en las media queries de `900px` y `640px`.
 - La accesibilidad de movimiento reducido está en `prefers-reduced-motion`.
 
-El router activo está en `app/` en la raíz. No agregues `src/pages/` junto con esa carpeta: Next.js rechaza App Router y Pages Router en niveles distintos.
+El router activo está en `src/app/`. No agregues `src/pages/` junto con esa carpeta: Next.js rechaza App Router y Pages Router en niveles distintos.
 
-Las fuentes de títulos y texto se cargan desde Google Fonts en `app/layout.tsx`. Para alojarlas localmente, sustituye ese enlace por archivos de fuentes con licencia y precarga solo los pesos que utilices.
+Las fuentes de títulos y texto se cargan desde Google Fonts en `src/app/layout.tsx`. Para alojarlas localmente, sustituye ese enlace por archivos de fuentes con licencia y precarga solo los pesos que utilices.
 
 ### 6. Actualizar SEO y vista previa social
 
-`app/layout.tsx` define el idioma del documento, título, descripción, color del navegador y metadatos Open Graph básicos. Actualiza esos valores, añade la URL canónica y una imagen real de vista previa para tu dominio, y verifica que la descripción corresponda a la oferta publicada. Añade un favicon en `public/` y enlázalo desde los metadatos.
+`src/app/layout.tsx` define el idioma del documento, título, descripción, color del navegador y metadatos Open Graph básicos. Actualiza esos valores, añade la URL canónica y una imagen real de vista previa para tu dominio, y verifica que la descripción corresponda a la oferta publicada. Añade un favicon en `public/` y enlázalo desde los metadatos.
 
 ### 7. Antes de publicar
 

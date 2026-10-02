@@ -4,7 +4,10 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="shell footer-inner">
-        <a className="brand" href="#top"><span className="brand-mark" aria-hidden="true" /><span>{siteConfig.name}</span></a>
+        <a className="brand" href="#top" aria-label={`${siteConfig.name} home`}>
+          <span className="brand-mark" aria-hidden="true" />
+          <span className="brand-name">{siteConfig.name.slice(1)}</span>
+        </a>
         <p className="footer-note">© {new Date().getFullYear()} {siteConfig.name}. Marketing, with a clearer signal.</p>
         <div className="footer-links">
           <a href="#pricing">Plans</a>

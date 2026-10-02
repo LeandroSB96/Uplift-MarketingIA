@@ -12,7 +12,7 @@ export function SiteNav() {
       <nav className="shell nav-inner" aria-label="Main navigation">
         <a className="brand" href="#top" aria-label={`${siteConfig.name} home`}>
           <span className="brand-mark" aria-hidden="true" />
-          <span>{siteConfig.name}</span>
+          <span className="brand-name">{siteConfig.name.slice(1)}</span>
         </a>
         <div className="nav-links">
           {siteConfig.navigation.map((item) => <a href={item.href} key={item.href}>{item.label}</a>)}
