@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { ArrowUpRight, Menu, X } from 'lucide-react'
 import { siteConfig } from '../config/site'
 
 export function SiteNav() {
@@ -16,8 +16,8 @@ export function SiteNav() {
         </a>
         <div className="nav-links">
           {siteConfig.navigation.map((item) => <a href={item.href} key={item.href}>{item.label}</a>)}
-          <a className="nav-cta" href="#contact">
-            Talk to our team <span aria-hidden="true">&nearr;</span>
+          <a className="nav-cta flex items-center gap-2" href="#contact">
+            Talk to our team <ArrowUpRight className="size-4" aria-hidden="true" />
           </a>
         </div>
         <div className="mobile-menu">

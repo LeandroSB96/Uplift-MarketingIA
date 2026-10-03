@@ -69,7 +69,7 @@ The display and body fonts are loaded from Google Fonts in `src/app/layout.tsx`.
 
 ### 6. Update SEO and social sharing
 
-`src/app/layout.tsx` provides the document language, title, description, theme color, and basic Open Graph metadata. Change the defaults there, add a canonical URL and a real social-preview image for your domain, and keep the description aligned with the page's actual offer. Add a favicon under `public/` and reference it from the metadata.
+`src/app/layout.tsx` provides the document language, title, description, theme color, icons, and Open Graph metadata. Replace the defaults and `public/og-image.png` with your brand's real social-preview image, and keep the description aligned with the page's actual offer. Update both `public/favicon.ico` and `public/favicon.svg` when changing the brand mark.
 
 ### 7. Before publishing
 

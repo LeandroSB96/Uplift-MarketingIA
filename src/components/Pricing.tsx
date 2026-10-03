@@ -1,3 +1,4 @@
+import { ArrowUpRight } from 'lucide-react'
 import { siteConfig } from '../config/site'
 
 const plans = [
@@ -48,7 +49,7 @@ export function Pricing() {
               href={`mailto:${siteConfig.email}?subject=${encodeURIComponent(`Plan inquiry: ${plan.name}`)}`}
             >
               {plan.name === 'Scale' ? 'Talk to our team' : 'Request this plan'}
-              <span aria-hidden="true">&nearr;</span>
+              <ArrowUpRight className="size-4" aria-hidden="true" />
             </a>
             <ul>
               {plan.features.map((feature) => <li key={feature}>{feature}</li>)}

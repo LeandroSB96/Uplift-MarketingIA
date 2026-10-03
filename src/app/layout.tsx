@@ -6,12 +6,23 @@ export const metadata: Metadata = {
   description:
     'Turn marketing signals into decisive growth with an AI operating system built for modern teams.',
   icons: {
-    icon: '/favicon.svg',
+    icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
   },
   openGraph: {
     title: 'Uplift | Marketing intelligence, in motion',
     description:
       'Turn marketing signals into decisive growth with an AI operating system built for modern teams.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Uplift — AI Marketing Template',
+      },
+    ],
     type: 'website',
   },
 }

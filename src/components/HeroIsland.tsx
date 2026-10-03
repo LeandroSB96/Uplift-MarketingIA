@@ -15,8 +15,8 @@ export function HeroIsland() {
           predictive insights, and creative testing into one intelligent operating system.
         </p>
         <div className="hero-actions">
-          <a className="button-primary" href="#contact">
-            Get a growth assessment <ArrowUpRight size={15} aria-hidden="true" />
+          <a className="button-primary flex items-center gap-2" href="#contact">
+            Get a growth assessment <ArrowUpRight className="size-4" aria-hidden="true" />
           </a>
           <a className="button-text" href="#platform">Explore the platform <ArrowDownRight size={14} aria-hidden="true" /></a>
         </div>

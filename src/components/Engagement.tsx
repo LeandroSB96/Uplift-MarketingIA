@@ -1,3 +1,4 @@
+import { ArrowUpRight } from 'lucide-react'
 import { siteConfig } from '../config/site'
 
 const engagements = [
@@ -24,7 +25,7 @@ export function Engagement() {
           <h2 className="section-title">Start with the growth challenge. Build from there.</h2>
           <p className="section-copy">Whether you are proving a channel or coordinating a global portfolio, the work starts with your goals, data, and team.</p>
           <a className="button-text" href={`mailto:${siteConfig.email}?subject=Discuss%20a%20marketing%20engagement`}>
-            Discuss your priorities <span aria-hidden="true">&nearr;</span>
+            Discuss your priorities <ArrowUpRight className="size-4" aria-hidden="true" />
           </a>
         </div>
         <div className="engagement-list">
